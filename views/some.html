@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="keywords" content="Semantic forms, standards, webstandards, semantically, horizontal forms" />
+<meta name="author" content="Chris Ramakers @ Skyrocket.be" />
+<title>Horizontal Forms symantically</title>
+<style type="text/css">
+
+body {
+        background-color: #ffffff;
+        color: #FFFFFF;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+#theform {
+        background-color: #ffffff;
+        width: 100%;
+        }
+#theform fieldset {
+        height: 20em;
+        width: 11em;
+        border: 0;
+        margin: 0;
+        padding: 1em;
+        float: left;
+        }
+#theform fieldset legend {
+        font-size: 4em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #FFFFFF;
+        }
+#theform fieldset legend span {
+        display: none;
+        }
+h1
+{
+color: #cc0000;
+}
+#theform fieldset h3 {
+        height: 4em;
+        font-size: 1em;
+        }
+#theform fieldset div.help {
+        color: #FFFF99;
+        font-size: 0.7em;
+        font-weight: bold;
+        height: 5em;
+        }
+#theform fieldset label {
+        font-size: 0.7em;
+        display: block;
+        line-height: 1.5em;
+        }
+#theform fieldset input {
+        font-size: 0.8em;
+        height: 1.2em;
+        }
+
+/* Error Styling */
+#theform fieldset.error,
+#theform fieldset.error legend,
+#theform fieldset.error div.help {
+        color: #FFCC33;
+        }
+#theform fieldset strong.error {
+        color: #fff;
+        background-color: #CC0000;
+        padding: 0.2em;
+        font-size: 0.7em;
+        font-weight: bold;
+        display: block;
+        }
+
+/* Part 4 Styling */
+#theform #pt4 {
+        clear: both;
+        width: 38em;
+        height: 5em;
+        border: 10px solid #666600;
+        border-width: 10px 0;
+        padding: 1em;
+        }
+#theform #pt4 legend {
+        display: none;
+        }
+#theform #pt4 h3 {
+        display: none;
+        }
+#theform #pt4 #disclaimer {
+        width: 22em;
+        float: left;
+        font-size: 0.7em;
+        }
+#theform #pt4 input {
+        height: 5em;
+        font-size: 1em;
+        width: 18em;
+        color: #666666;
+        background: #f3f3f3;
+        font-weight: bold;
+        border-bottom:  1px solid #999999;
+        border-right: 1px solid #999999;
+        border-top: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;
+        float: right;
+        }
+
+#copyright {
+        clear: both;
+        padding: 0.5em;
+        font-size: 0.8em;
+        color: #9F9F00;
+        font-style: italic;
+        }
+</style>
+
+<!--[if IE]>
+<style type="text/css">
+#theform #pt4 {
+        padding: 2em 1em 1em 1em;
+        }
+</style>
+<![endif]-->
+
+</head>
+
+<body>
+<h1>100Rupee Coin</h1>
+<form id="theform" action="action.php" enctype="multipart/form-data" method="post">
+        <fieldset id="pt1" class="error">
+                <br></br>
+                <h3>I will Pay</h3>
+                <!--div class="help">Your login will be part of your website URL.</div>
+                <label for="loginname">Login / Sitename</label>
+                <input type="text" id="loginname" tabindex="1" /-->
+        </fieldset>
+        <fieldset id="pt1" class="error">
+                <!--legend><span>Step </span>1. <span>: Login details</span></legend>
+                <h3>Pick a login name.</h3>
+                <div class="help">Your login will be part of your website URL.</div>
+                <label for="loginname">Login / Sitename</label-->
+                <br></br> <br></br>
+                <input type="text" id="loginname" tabindex="1" />
+        </fieldset>
+        <fieldset id="pt2" class="error">
+           <br></br>
+                <h3>for</h3>
+                <!--div class="help">Passwords must be 6-30 characters in length.</div>
+                <label for="password1">Password</label>
+                <input type="text" id="password1" tabindex="2" />
+                <label for="password2">Repeat Password</label>
+                <input type="text" id="password2" tabindex="3" /-->
+        </fieldset>
+        <fieldset id="pt3" class="error">
+                <!--legend><span>Step </span>3. <span>: Email details</span></legend>
+                <h3>Enter your email address.</h3>
+                <div class="help">You must enter a valid email address to activate your account.</div>
+                <strong class="error">An email address is required!</strong>
+                <label for="email1">Email</label>
+                <input type="text" id="email1" tabindex="4" />
+                <label for="email2">Repeat Email</label>
+                <input type="textarea" id="email2" tabindex="5" /-->
+                <TEXTAREA Name="comments" rows="4" cols="20"></TEXTAREA>
+        </fieldset>  <fieldset id="pt3" class="error">
+                <!--legend><span>Step </span>3. <span>: Email details</span></legend>
+                <h3>Enter your email address.</h3>
+                <div class="help">You must enter a valid email address to activate your account.</div>
+                <strong class="error">An email address is required!</strong>
+                <label for="email1">Email</label>
+                <input type="text" id="email1" tabindex="4" />
+                <label for="email2">Repeat Email</label>
+                <input type="textarea" id="email2" tabindex="5" /-->
+
+ <br></br> <br></br> <br></br>
+
+                <INPUT Type="submit" Value="Submit">
+        </fieldset>
+
+</form>
+<form id="theform" action="action.php" enctype="multipart/form-data" method="post">
+        <fieldset id="pt1" class="error">
+                <br></br>
+                <h3>I will Pay</h3>
+                <!--div class="help">Your login will be part of your website URL.</div>
+                <label for="loginname">Login / Sitename</label>
+                <input type="text" id="loginname" tabindex="1" /-->
+        </fieldset>
+        <fieldset id="pt1" class="error">
+                <!--legend><span>Step </span>1. <span>: Login details</span></legend>
+                <h3>Pick a login name.</h3>
+                <div class="help">Your login will be part of your website URL.</div>
+                <label for="loginname">Login / Sitename</label-->
+                <br></br> <br></br>
+                <input type="text" id="loginname" tabindex="1" />
+        </fieldset>
+        <fieldset id="pt2" class="error">
+           <br></br>
+                <h3>for</h3>
+                <!--div class="help">Passwords must be 6-30 characters in length.</div>
+                <label for="password1">Password</label>
+                <input type="text" id="password1" tabindex="2" />
+                <label for="password2">Repeat Password</label>
+                <input type="text" id="password2" tabindex="3" /-->
+        </fieldset>
+        <fieldset id="pt3" class="error">
+                <!--legend><span>Step </span>3. <span>: Email details</span></legend>
+                <h3>Enter your email address.</h3>
+                <div class="help">You must enter a valid email address to activate your account.</div>
+                <strong class="error">An email address is required!</strong>
+                <label for="email1">Email</label>
+                <input type="text" id="email1" tabindex="4" />
+                <label for="email2">Repeat Email</label>
+                <input type="textarea" id="email2" tabindex="5" /-->
+                <TEXTAREA Name="comments" rows="4" cols="20"></TEXTAREA>
+        </fieldset>  <fieldset id="pt3" class="error">
+                <!--legend><span>Step </span>3. <span>: Email details</span></legend>
+                <h3>Enter your email address.</h3>
+                <div class="help">You must enter a valid email address to activate your account.</div>
+                <strong class="error">An email address is required!</strong>
+                <label for="email1">Email</label>
+                <input type="text" id="email1" tabindex="4" />
+                <label for="email2">Repeat Email</label>
+                <input type="textarea" id="email2" tabindex="5" /-->
+
+ <br></br> <br></br> <br></br>
+
+                <INPUT Type="submit" Value="Submit">
+        </fieldset>
+
+</form>
+
+
+</body>
+</html>
