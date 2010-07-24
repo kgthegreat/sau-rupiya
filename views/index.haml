@@ -1,19 +1,27 @@
-%html
-  %body
-    %h1 100Rupee Coin
-    %form{:id => 'form',:method => 'post', :action => '/post' }
-      %h3 I will pay
-      %select
-        %option 1
-        %option 2
-        %option 3
-        %option 4
-        %option 5
-        %option 6
-        %option 7
-        %option 8
-        %option 9
-        %option 10
-      %h3 100Rupee Coin
-      %textarea{:name => 'description' , :rows => '4', :cols => '20'}
-      %button Submit
+%h1 100Rupee Coin
+%form{:id => 'form',:method => 'post', :action => '/post' }
+  %input{:name => '_method', :value=>'put', :type =>'hidden'}
+    %h3 I will
+    %select{:name => 'task-type'}
+      %option pay
+      %option take
+    %select{:name => 'coins'}
+      %option 1
+      %option 2
+      %option 3
+      %option 4
+      %option 5
+      %option 6
+      %option 7
+      %option 8
+      %option 9
+      %option 10
+    %h3 100Rupee Coin For
+    %textarea{:name => 'task' , :rows => '4', :cols => '20'}
+    %button Submit
+    %br
+
+%a{:href => '/pay'}View all the money bringing tasks
+%br
+%a{:href => '/take'}View all the money draining tasks
+
